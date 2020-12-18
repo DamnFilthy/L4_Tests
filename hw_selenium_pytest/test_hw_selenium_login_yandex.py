@@ -12,21 +12,21 @@ class YandexPassportTest(unittest.TestCase):
         self.driver.get('https://passport.yandex.ru/auth')
 
     def test_yandex_login(self):
-        time.sleep(1)
-
+        # input login
         login = self.driver.find_element_by_name('login')
         login.send_keys('ТУТ_ВАШ_ЛОГИН')
         time.sleep(1)
+        # click
         self.driver.find_element(By.XPATH, '//button[span="Войти"]').click()
         time.sleep(3)
-
+        # input password
         passwd = self.driver.find_element_by_id('passp-field-passwd')
         passwd.send_keys('ТУТ_ВАШ_ПАРОЛЬ')
-
         time.sleep(1)
-
+        # click
         self.driver.find_element(By.XPATH, '//button[span="Войти"]').click()
         time.sleep(3)
+
         self.assertIn("Яндекс.Паспорт", self.driver.title)
 
     def tearDown(self):
