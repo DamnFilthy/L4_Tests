@@ -3,3 +3,4 @@ unit_tests.py
 .pytest_cache
 *.log
 .idea
+__pycache__
