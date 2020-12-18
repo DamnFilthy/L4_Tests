@@ -1,6 +1,5 @@
 import pytest
 import unittest
-from unittest.mock import patch
 from secretaty_programm import remove_doc_from_shelf, get_all_doc_owners_names, check_document_existance, \
     add_new_shelf, append_doc_to_shelf, get_doc_owner_name, delete_doc, get_doc_shelf, move_doc_to_shelf, \
     show_all_docs_info, add_new_doc
