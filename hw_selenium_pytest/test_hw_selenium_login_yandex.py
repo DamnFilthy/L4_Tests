@@ -15,13 +15,13 @@ class YandexPassportTest(unittest.TestCase):
         time.sleep(1)
 
         login = self.driver.find_element_by_name('login')
-        login.send_keys('Shiryaev12345')
+        login.send_keys('ТУТ_ВАШ_ЛОГИН')
         time.sleep(1)
         self.driver.find_element(By.XPATH, '//button[span="Войти"]').click()
         time.sleep(3)
 
         passwd = self.driver.find_element_by_id('passp-field-passwd')
-        passwd.send_keys('1345685Aa')
+        passwd.send_keys('ТУТ_ВАШ_ПАРОЛЬ')
 
         time.sleep(1)
 

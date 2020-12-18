@@ -11,4 +11,4 @@ def create_folder_yandex(folder_name, token):
 
 
 if __name__ == '__main__':
-    create_folder_yandex('hello_mister_max', 'AgAAAAAe8QLQAADLW4qBV-3QTUq2hDwiL_KJK9w')
+    create_folder_yandex('ИМЯ_ПАПКИ', 'ТУТ_ВАШ_ТОКЕН')
